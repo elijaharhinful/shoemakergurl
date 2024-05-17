@@ -27,7 +27,8 @@
       3.6 Projects
       3.7 Partners
       3.8 Testimonials
-      3.9 Contact
+      3.9 Blog/News
+      4.0 Contact
 
 
 
@@ -1567,10 +1568,16 @@ h1+.line {
 }
 
 
+/* 3.9 Blog/News */
+@media(max-width: 768px) {
+.coming-soon{
+  display: block;
+  font-size: 1.8rem;
+}
+}
 
 
-/* 3.9 Contact */
-
+/* 4.0 Contact */
 .message {
   margin-bottom: 2rem;
   display: none;
