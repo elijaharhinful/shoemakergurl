@@ -989,6 +989,10 @@ h1+.line {
   transition: all .3s ease;
 }
 
+.text-and-line{
+  margin-left: 2rem;
+}
+
 
 @media(max-width: 399px) {
   #home {
