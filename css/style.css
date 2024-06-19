@@ -626,6 +626,12 @@ ion-icon {
   margin-right: 4rem;
 }
 
+.navbar-desktop .email .donate{
+  top: -0.4rem;
+  bottom: 0;
+  padding: 0.5rem;
+}
+
 .navbar-bottom {
   position: absolute;
   left: 0;
@@ -1073,7 +1079,7 @@ h1+.line {
   #home h1 {
     font-size: 5rem;
     line-height: 5.6rem;
-    width: 100%;
+    /* width: 100%; */
   }
 
   h1+.line {
