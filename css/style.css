@@ -630,8 +630,12 @@ ion-icon {
   top: -0.4rem;
   bottom: 0;
   padding: 0.5rem;
+  color: white !important;
 }
 
+.navbar-desktop .email .donate:hover{
+  color: black !important;
+}
 .navbar-bottom {
   position: absolute;
   left: 0;
