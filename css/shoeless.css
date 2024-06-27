@@ -14,18 +14,30 @@ body, html {
 .image-container {
     position: relative;
     width: 100%;
-    height: 100vh;
     overflow-y: auto;
 }
 
-.responsive-image {
-    width: 100%;
+.section {
+    max-width: 100%;
+    position: relative;
+}
+
+.section1 img, .section3 img {
+    max-width: 100%;
     height: auto;
     display: block;
 }
 
+.section2 {
+    background: url('../img/section2.png') no-repeat center center/cover;
+    height: 300px;
+    margin-top: -150px; 
+    padding-top: 150px; 
+    z-index: 1;
+    max-width: 100%;
+}
+
 .button {
-    position: absolute;
     display: block;
     padding: 10px 20px;
     color: #fff;
@@ -37,24 +49,28 @@ body, html {
     z-index: 99;
 }
 
-.back{
+.back {
     background-color: purple;
-    width: 11rem;
+    position: absolute;
     font-size: 1rem;
     top: 60px;
     left: 70%;
 }
 
 .buy {
-    top: 1760px;
+    position: relative;
+    top: 50%;
     left: 30%;
     background-color: orange;
+    transform: translateY(-50%);
 }
 
 .donate {
-    top: 1760px;
+    position: relative;
+    top: 30%;
     left: 80%;
     background-color: rgb(0, 167, 0);
+    transform: translateY(-50%);
 }
 
 .button:hover {
@@ -62,15 +78,14 @@ body, html {
 }
 
 .text-carousel {
-    position: absolute;
-    top: 1740px;
-    left: 62%;
-    font-size: 1.3rem;
-    transform: translateX(-50%);
+    position: relative;
+    top: 33%;
+    left: 60%;
+    transform: translate(-50%, -50%);
     width: 100%;
     max-width: 600px;
     text-align: center;
-    z-index: 9;
+    font-size: 1.23rem;
 }
 
 .carousel-text {
@@ -109,36 +124,51 @@ body, html {
     10%, 13.33% { opacity: 1; }
 }
 
-
-/* Media Queries */
-@media (max-width: 768px) {
+/* Media Queries mobile Phone */
+@media (max-width: 600px) {
     .button {
-        text-align: center;
-        padding: 3px 13px;
-        font-size: 0.7rem;
-        width: 2.3rem;
+        padding: 3px 4px;
+        font-size: 1rem;
+        max-width: 5rem;
     }
 
-    .back{
-        width: 7rem;
+    .back {
+        width: 8rem;
         font-size: 0.7rem;
         top: 35px;
         left: 60%;
+        padding: 3px 6px;
+    }
+
+    .section2 {
+        background: url('../img/section2.png') no-repeat center center/contain;
+        height: 100px;
+        margin-top: -75px; 
+        padding-top: 75px; 
+        max-width: 100%;
+    }
+
+    .buy, .donate {
+        font-size: 0.8rem;
+        width: 3rem;
     }
 
     .buy {
-        top: 559px;
-        left: 26%;
+        top: 82%;
+        left: 10%;
     }
-    
+
     .donate {
-        top: 559px;
-        left: 82%;
+        top: 62%;
+        left: 80%;
     }
 
     .text-carousel {
-        width: 39%;
-        font-size: 0.76rem;
-        top: 532px;
+        width: 70%;
+        font-size: 0.87rem;
+        top: 20%;
+        left: 53%;
     }
 }
+
+

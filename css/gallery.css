@@ -11,6 +11,10 @@ body {
     padding: 0 0 0 3rem;
 }
 
+.gallery-wrap h4 {
+    padding: 0 0 0 3rem;
+}
+
 .collage {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -164,7 +168,7 @@ body {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(8, 5vw);
-        grid-gap: 0.94rem;
+        grid-gap: 0.5rem;
     }
 
     .gallery-item-1 {
