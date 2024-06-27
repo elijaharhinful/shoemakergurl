@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Gadeg';
+    src: url('/fonts/Gadeg.otf') format('truetype');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    font-family: 'Gadeg', sans-serif;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.button {
+    position: absolute;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1.8rem;
+    text-decoration: none;
+    width: 7rem;
+    text-align: center;
+    transition: background-color 0.3s;
+    z-index: 99;
+}
+
+.back{
+    background-color: purple;
+    width: 11rem;
+    font-size: 1rem;
+    top: 60px;
+    left: 70%;
+}
+
+.buy {
+    top: 1760px;
+    left: 30%;
+    background-color: orange;
+}
+
+.donate {
+    top: 1760px;
+    left: 80%;
+    background-color: rgb(0, 167, 0);
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text-carousel {
+    position: absolute;
+    top: 1740px;
+    left: 62%;
+    font-size: 1.3rem;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    z-index: 9;
+}
+
+.carousel-text {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    animation: fade 30s infinite;
+}
+
+.carousel-text:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.carousel-text:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.carousel-text:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.carousel-text:nth-child(4) {
+    animation-delay: 15s;
+}
+
+.carousel-text:nth-child(5) {
+    animation-delay: 20s;
+}
+
+.carousel-text:nth-child(6) {
+    animation-delay: 25s;
+}
+
+@keyframes fade {
+    0%, 16.67%, 100% { opacity: 0; }
+    10%, 13.33% { opacity: 1; }
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .button {
+        text-align: center;
+        padding: 3px 13px;
+        font-size: 0.7rem;
+        width: 2.3rem;
+    }
+
+    .back{
+        width: 7rem;
+        font-size: 0.7rem;
+        top: 35px;
+        left: 60%;
+    }
+
+    .buy {
+        top: 559px;
+        left: 26%;
+    }
+    
+    .donate {
+        top: 559px;
+        left: 82%;
+    }
+
+    .text-carousel {
+        width: 39%;
+        font-size: 0.76rem;
+        top: 532px;
+    }
+}
