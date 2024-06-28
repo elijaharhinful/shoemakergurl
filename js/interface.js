@@ -121,26 +121,26 @@
     });
 
     /* Send form */
-    if ($('.js-ajax-form').length) {
-        $('.js-ajax-form').each(function () {
-            $(this).validate({
-                errorClass: 'error',
-                submitHandler: function (form) {
-                    $.ajax({
-                        type: "POST",
-                        url: "mail.php",
-                        data: $(form).serialize(),
-                        success: function () {
-                            $('#success-message').show();
-                        },
+    // if ($('.js-ajax-form').length) {
+    //     $('.js-ajax-form').each(function () {
+    //         $(this).validate({
+    //             errorClass: 'error',
+    //             submitHandler: function (form) {
+    //                 $.ajax({
+    //                     type: "POST",
+    //                     url: "mail.php",
+    //                     data: $(form).serialize(),
+    //                     success: function () {
+    //                         $('#success-message').show();
+    //                     },
 
-                        error: function () {
-                            $('#error-message').show();
-                        }
-                    });
-                }
-            });
-        });
-    }
+    //                     error: function () {
+    //                         $('#error-message').show();
+    //                     }
+    //                 });
+    //             }
+    //         });
+    //     });
+    // }
 
 })(jQuery);
