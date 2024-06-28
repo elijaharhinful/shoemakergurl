@@ -38,7 +38,8 @@
 			<div class="container d-block">
 				<span class="phone  my-0 d-none d-md-block">+233 591 514 966</span>
 				<span class="email  my-0 d-none d-md-block">ednafrimpong13@gmail.com</span>
-				<span class="email  my-0 d-none d-md-block"><a href="https://gofund.me/fa7d9b53" class="btn donate" target="_blank">Donate now</a></span>
+				<span class="email  my-0 d-none d-md-block"><a href="https://gofund.me/fa7d9b53" class="btn donate"
+						target="_blank">Donate now</a></span>
 			</div>
 
 			<!-- Toggler -->
@@ -329,7 +330,8 @@
 										</a>
 									</div>
 									<div class="col-project-box col-md-6 col-lg-4 col-xl-3">
-										<a href="https://www.linkedin.com/in/edna-frimpong/details/projects/" class="project-box">
+										<a href="https://www.linkedin.com/in/edna-frimpong/details/projects/"
+											class="project-box">
 											<div class="project-box-inner">
 												<h4>Hosting LinkedIn Hangout </h4>
 												<div class="project-category">Networking</div>
@@ -337,7 +339,8 @@
 										</a>
 									</div>
 									<div class="col-project-box col-md-6 col-lg-4 col-xl-3">
-										<a href="https://www.linkedin.com/in/edna-frimpong/details/projects/" class="project-box">
+										<a href="https://www.linkedin.com/in/edna-frimpong/details/projects/"
+											class="project-box">
 											<div class="project-box-inner">
 												<h4>Skin Bleaching Documentary</h4>
 												<div class="project-category">Health</div>
@@ -345,7 +348,8 @@
 										</a>
 									</div>
 									<div class="col-project-box col-md-6 col-lg-4 col-xl-3">
-										<a href="https://www.linkedin.com/in/edna-frimpong/details/projects/" class="project-box">
+										<a href="https://www.linkedin.com/in/edna-frimpong/details/projects/"
+											class="project-box">
 											<div class="project-box-inner">
 												<h4>Meet and Bite Hangout</h4>
 												<div class="project-category">Recreational</div>
@@ -495,8 +499,7 @@
 		</section>
 
 		<!-- Contact -->
-		<section id="contact" class="navbar-is-white text-white section pp-scrollable position-absolute"
-			style="background-image:url('img/bg/contact.jpg');">
+		<section id="contact" class="navbar-is-white text-white section pp-scrollable position-absolute">
 			<div class="intro">
 				<div class="scroll-wrap">
 					<div class="container">
@@ -512,10 +515,9 @@
 								<p class="text-muted mt-3">ednafrimpong13@gmail.com</p>
 							</div>
 							<div class="col-md-5 offset-md-2">
-								<h3 class="text-white mt-0">Let's grab a coffee and jump on conversation <span
-										class="text-secondary">chat with me.</span></h3>
+								<h3 class="text-secondary mt-0">chat with me</h3>
 								<div class="mt-5">
-									<form class="js-ajax-form">
+									<form class="js-ajax-form" method="post" action="mail.php">
 										<div class="form-group">
 											<input type="text" name="name" class="form-control" placeholder="Name">
 										</div>
@@ -557,6 +559,31 @@
 			<li data-menuanchor="contact"></li>
 		</ul>
 	</div>
+
+	<script>
+		document.querySelector(".js-ajax-form").addEventListener("submit", function (event) {
+			event.preventDefault();
+
+			var formData = new FormData(this);
+			var xhr = new XMLHttpRequest();
+			xhr.open("POST", this.action, true);
+			xhr.onload = function () {
+				if (xhr.status === 200) {
+					if (xhr.responseText.trim() === "success") {
+						document.getElementById("success-message").style.display = "block";
+						document.getElementById("error-message").style.display = "none";
+					} else {
+						document.getElementById("success-message").style.display = "none";
+						document.getElementById("error-message").style.display = "block";
+					}
+				} else {
+					document.getElementById("success-message").style.display = "none";
+					document.getElementById("error-message").style.display = "block";
+				}
+			};
+			xhr.send(formData);
+		});
+	</script>
 
 	<!-- Optional JavaScript -->
 	<script src="js/jquery-1.12.4.min.js"></script>
