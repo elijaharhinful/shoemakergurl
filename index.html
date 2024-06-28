@@ -517,7 +517,7 @@
 							<div class="col-md-5 offset-md-2">
 								<h3 class="text-secondary mt-0">chat with me</h3>
 								<div class="mt-5">
-									<form class="js-ajax-form" method="post" action="mail.php">
+									<form class="js-ajax-form" method="POST" action="https://formspree.io/f/xnnaaeqa">
 										<div class="form-group">
 											<input type="text" name="name" class="form-control" placeholder="Name">
 										</div>
@@ -559,31 +559,6 @@
 			<li data-menuanchor="contact"></li>
 		</ul>
 	</div>
-
-	<script>
-		document.querySelector(".js-ajax-form").addEventListener("submit", function (event) {
-			event.preventDefault();
-
-			var formData = new FormData(this);
-			var xhr = new XMLHttpRequest();
-			xhr.open("POST", this.action, true);
-			xhr.onload = function () {
-				if (xhr.status === 200) {
-					if (xhr.responseText.trim() === "success") {
-						document.getElementById("success-message").style.display = "block";
-						document.getElementById("error-message").style.display = "none";
-					} else {
-						document.getElementById("success-message").style.display = "none";
-						document.getElementById("error-message").style.display = "block";
-					}
-				} else {
-					document.getElementById("success-message").style.display = "none";
-					document.getElementById("error-message").style.display = "block";
-				}
-			};
-			xhr.send(formData);
-		});
-	</script>
 
 	<!-- Optional JavaScript -->
 	<script src="js/jquery-1.12.4.min.js"></script>
