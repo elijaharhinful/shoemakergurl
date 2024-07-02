@@ -157,6 +157,22 @@ body {
     grid-row: 8 / 10;
 }
 
+.collage1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 0.94rem;
+}
+
+.gallery-item-40,
+.gallery-item-41,
+.gallery-item-42,
+.gallery-item-43 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+
 
 /* for mobile phones */
 @media screen and (max-width: 768px) {
@@ -294,5 +310,18 @@ body {
     .gallery-item-24 {
         grid-column: 8 / 9;
         grid-row: 8 / 10;
+    }
+
+    .collage1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .gallery-item-40,
+    .gallery-item-41,
+    .gallery-item-42,
+    .gallery-item-43 {
+        grid-column: span 1;
+        grid-row: span 1;
     }
 }

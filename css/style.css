@@ -1531,6 +1531,67 @@ h1+.line {
   color: #ffffff;
 }
 
+/* Style the popup content */
+.mfp-content {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Title styling */
+.mfp-content h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* List styling */
+.mfp-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.mfp-content ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .mfp-content {
+      padding: 1.5rem;
+  }
+
+  .mfp-content h2 {
+      font-size: 1.5rem;
+  }
+
+  .mfp-content ul li {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mfp-content {
+      padding: 1rem;
+  }
+
+  .mfp-content h2 {
+      font-size: 1.25rem;
+  }
+
+  .mfp-content ul li {
+      font-size: 0.85rem;
+  }
+}
+
+
+
 @media (min-width: 768px) {
   .project-box {
     padding-bottom: 75%;
@@ -1624,4 +1685,20 @@ h1+.line {
 .message {
   margin-bottom: 2rem;
   display: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: left; 
+  align-items: center; 
+}
+
+.social-icons a {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
 }

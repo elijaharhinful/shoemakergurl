@@ -92,6 +92,14 @@
         gallery: { enabled: true }
     });
 
+    $('.popup-link').magnificPopup({
+        type: 'inline',
+        midClick: true,
+        mainClass: 'mfp-fade', // Adds a fade-in effect
+        removalDelay: 300, // Delay in milliseconds before the popup is removed
+        fixedContentPos: true // Keeps the popup fixed at the center of the screen
+    });
+
 
 
     /* Change bacgkround on project section*/
