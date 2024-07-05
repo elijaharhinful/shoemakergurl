@@ -659,7 +659,6 @@ ion-icon {
 .navbar-bottom .social {
   position: relative;
   z-index: 10;
-  float: left;
 }
 
 .navbar-bottom .copy {
@@ -667,6 +666,7 @@ ion-icon {
   position: relative;
   z-index: 10;
 }
+
 
 .social-icons li {
   float: left;
@@ -692,8 +692,6 @@ ion-icon {
 
 
 /* 2.1 Navbar Desktop */
-
-
 
 .navbar-desktop:before {
   content: '';
