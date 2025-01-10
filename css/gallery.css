@@ -38,7 +38,7 @@ figcaption {
 /* mobile devices */
 @media screen and (max-width: 768px) {
   #gallery {
-    padding: 2.83rem 2rem 2rem 4rem;
+    padding: 2rem;
   }
 
   #gallery h1 {

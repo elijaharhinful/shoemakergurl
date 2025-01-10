@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Edna - Personal Website" />
+    <meta name="author" content="" />
+
+    <!-- CSS -->
+    <!-- FancyBox stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--site stylesheet-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--gallery stylesheet-->
+    <link rel="stylesheet" href="css/blogs.css" />
+
+    <title>Edna | Blogs</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NZ4KNFWY03"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-NZ4KNFWY03");
+    </script>
+  </head>
+
+  <body>
+    <!-- Loader -->
+    <div class="loader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-desktop">
+      <div class="position-relative w-100">
+        <!-- Brand-->
+        <a class="navbar-brand" href="index.html">Edna</a>
+        <div class="container d-block">
+          <span class="phone my-0 d-none d-md-block">+233 591 514 966</span>
+          <span class="email my-0 d-none d-md-block"
+            >ednafrimpong13@gmail.com</span
+          >
+        </div>
+
+        <!-- Toggler -->
+        <button class="toggler">
+          <span class="toggler-icon"></span>
+          <span class="toggler-icon"></span>
+          <span class="toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Navbar Mobile -->
+    <nav class="navbar navbar-mobile">
+      <ion-icon class="close" name="close-outline"></ion-icon>
+
+      <!-- language -->
+      <ul class="language">
+        <li class="active"><a href="#">ENG</a></li>
+        <li><a href="#">FRA</a></li>
+      </ul>
+
+      <ul class="navbar-nav navbar-nav-mobile">
+        <li>
+          <a class="nav-link" data-menuanchor="home" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="nav-link" data-menuanchor="about" href="index.html#about"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            data-menuanchor="experience"
+            href="index.html#experience"
+            >Experience</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" data-menuanchor="skills" href="index.html#skills"
+            >Skills</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            data-menuanchor="projects"
+            href="index.html#projects"
+            >Projects</a
+          >
+        </li>
+        <li class="active">
+          <a
+            class="nav-link active"
+            data-menuanchor="gallery"
+            href="gallery.html"
+            >Gallery</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            data-menuanchor="partners"
+            href="index.html#partners"
+            >Partners</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            data-menuanchor="testimonials"
+            href="index.html#testimonials"
+            >Testimonials</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" data-menuanchor="news" href="index.html#news"
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            data-menuanchor="contact"
+            href="index.html#contact"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <div class="navbar-mobile-footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+      </div>
+    </nav>
+
+    <!-- Blog-->
+    <!-- <section id="blogs" class="pp-scrollable position-absolute">
+      <div class="scroll-wrap">
+        <div class="container">
+          <div
+            class="d-block d-md-flex align-items-center justify-content-between"
+          >
+            <h2 class="mb-0 mb-3 mb-md-0 text-secondary">Blogs</h2>
+          </div>
+          <div class="mt-5 pt-4">
+            <div class="news-row row">
+              <div class="col-lg-4">
+                <a
+                  href="https://www.linkedin.com/posts/edna-frimpong_sundayread-shoemakergurl-ishallbesatisfied-activity-7192825976173547520-bpjC?utm_source=share&utm_medium=member_desktop"
+                  ><img alt="" class="w-100" src="img/news/digging.jpg"
+                /></a>
+                <p class="mt-4">June, 2024</p>
+                <h4 class="mt-3">Keep digging</h4>
+                <a
+                  href="https://www.linkedin.com/posts/edna-frimpong_sundayread-shoemakergurl-ishallbesatisfied-activity-7192825976173547520-bpjC?utm_source=share&utm_medium=member_desktop"
+                  >Read more 🡒</a
+                >
+              </div>
+              <div class="col-lg-4">
+                <a
+                  href="https://www.linkedin.com/posts/edna-frimpong_shoemakergurl-sundayread-consistency-activity-7185209590140039168-pRq3?utm_source=share&utm_medium=member_desktop"
+                  ><img alt="" class="w-100" src="img/news/silent.jpg"
+                /></a>
+                <p class="mt-4">July, 2024</p>
+                <h4 class="mt-3">The silent auditorium</h4>
+                <a
+                  href="https://www.linkedin.com/posts/edna-frimpong_shoemakergurl-sundayread-consistency-activity-7185209590140039168-pRq3?utm_source=share&utm_medium=member_desktop"
+                  >Read more 🡒</a
+                >
+              </div>
+              <div class="col-lg-4">
+                <a
+                  href="https://www.linkedin.com/posts/edna-frimpong_shoemakergurl-shoemaking-ahofade-activity-7185943331019927552-0PgQ?utm_source=share&utm_medium=member_desktop"
+                  ><img alt="" class="w-100" src="img/news/size.jpg"
+                /></a>
+                <p class="mt-4">August, 2024</p>
+                <h4 class="mt-3">Size differs</h4>
+                <a
+                  href="https://www.linkedin.com/posts/edna-frimpong_shoemakergurl-shoemaking-ahofade-activity-7185943331019927552-0PgQ?utm_source=share&utm_medium=member_desktop"
+                  >Read more 🡒</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="mt-5 pt-4">
+            <div class="news-row row">
+              <div class="col-lg-4">
+                <a
+                  href="https://www.linkedin.com/posts/edna-frimpong_sundayread-shoemakergurl-ishallbesatisfied-activity-7192825976173547520-bpjC?utm_source=share&utm_medium=member_desktop"
+                  ><img alt="" class="w-100" src="img/news/digging.jpg"
+                /></a>
+                <p class="mt-4">June, 2024</p>
+                <h4 class="mt-3">Keep digging</h4>
+                <a
+                  href="https://www.linkedin.com/posts/edna-frimpong_sundayread-shoemakergurl-ishallbesatisfied-activity-7192825976173547520-bpjC?utm_source=share&utm_medium=member_desktop"
+                  >Read more 🡒</a
+                >
+              </div>
+              <div class="col-lg-4">
+                <a
+                  href="https://www.linkedin.com/posts/edna-frimpong_shoemakergurl-sundayread-consistency-activity-7185209590140039168-pRq3?utm_source=share&utm_medium=member_desktop"
+                  ><img alt="" class="w-100" src="img/news/silent.jpg"
+                /></a>
+                <p class="mt-4">July, 2024</p>
+                <h4 class="mt-3">The silent auditorium</h4>
+                <a
+                  href="https://www.linkedin.com/posts/edna-frimpong_shoemakergurl-sundayread-consistency-activity-7185209590140039168-pRq3?utm_source=share&utm_medium=member_desktop"
+                  >Read more 🡒</a
+                >
+              </div>
+              <div class="col-lg-4">
+                <a
+                  href="https://www.linkedin.com/posts/edna-frimpong_shoemakergurl-shoemaking-ahofade-activity-7185943331019927552-0PgQ?utm_source=share&utm_medium=member_desktop"
+                  ><img alt="" class="w-100" src="img/news/size.jpg"
+                /></a>
+                <p class="mt-4">August, 2024</p>
+                <h4 class="mt-3">Size differs</h4>
+                <a
+                  href="https://www.linkedin.com/posts/edna-frimpong_shoemakergurl-shoemaking-ahofade-activity-7185943331019927552-0PgQ?utm_source=share&utm_medium=member_desktop"
+                  >Read more 🡒</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+	<!-- Blog/News-->
+	<section id="news" class=" pp-scrollable position-absolute">
+        <div class="intro">
+          <div class="scroll-wrap">
+            <div class="container">
+              <div
+                class="d-block d-md-flex align-items-center justify-content-between"
+              >
+                <h2 class="mb-0 mb-3 mb-md-0">
+                  Blog
+                  <span class="text-secondary coming-soon">(coming soon)</span>
+                </h2></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Optional JavaScript -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.pagepiling.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/interface.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+body {
+  overflow-y: scroll;
+}
+
+/* mobile devices */
+@media screen and (max-width: 768px) {
+  
+}
