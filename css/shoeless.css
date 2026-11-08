@@ -74,6 +74,24 @@ body, html {
     transform: translateY(-50%);
 }
 
+/* Link to the campaign's own site, shoefortheshoeless.org */
+.site {
+    background-color: #fff200;
+    color: #880958;
+    font-weight: bold;
+    position: absolute;
+    font-size: 1rem;
+    top: 120px;
+    left: 70%;
+    width: auto;
+    max-width: none;
+    white-space: nowrap;
+}
+
+.site:hover {
+    color: #fff;
+}
+
 .button:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
@@ -147,6 +165,15 @@ body, html {
         margin-top: -75px; 
         padding-top: 75px; 
         max-width: 100%;
+    }
+
+    .site {
+        width: auto;
+        max-width: none;
+        font-size: 0.7rem;
+        top: 70px;
+        left: 60%;
+        padding: 3px 6px;
     }
 
     .buy, .donate {
